@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+
+ // Definindo o número secreto fixo
+ const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+// Pedindo ao usuário para adivinhar o número
+let chute = prompt("Tente adivinhar o número secreto (entre 1 e 10):");
+
+// Convertendo o chute para um número
+chute = Number(chute);
+
+// Exibindo o número secreto e o chute do usuário
+alert(`O número secreto era: ${numeroSecreto}. Você chutou: ${chute}.`);
+
+
+
+
+    </script>
+</body>
+
+</html>

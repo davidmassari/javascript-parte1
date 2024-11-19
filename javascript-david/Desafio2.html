@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Simples</title>
+</head>
+<body>
+
+    <script>
+        // Solicitando o nome da disciplina
+        let nomeDisciplina = prompt("Qual o nome da disciplina?");
+
+        // Solicitando as notas das três provas
+        let nota1 = prompt("Digite a nota da primeira prova:");
+        let nota2 = prompt("Digite a nota da segunda prova:");
+        let nota3 = prompt("Digite a nota da terceira prova:");
+
+        // Convertendo as notas para números
+        nota1 = Number(nota1);
+        nota2 = Number(nota2);
+        nota3 = Number(nota3);
+
+        // Verificando se as entradas são válidas
+        if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+            alert("Por favor, insira valores válidos para todas as notas.");
+        } else {
+            // Calculando a média simples
+            let media = (nota1 + nota2 + nota3) / 3;
+
+            // Formatando a mensagem final
+            let mensagem = `Na disciplina ${nomeDisciplina}, você obteve as notas: ${nota1.toFixed(1)}, ${nota2.toFixed(1)}, ${nota3.toFixed(1)}. Sua média final é: ${media.toFixed(2)}.`;
+
+            // Exibindo o resultado
+            alert(mensagem);
+            console.log(mensagem);
+        }
+    </script>
+    
+</body>
+</html>

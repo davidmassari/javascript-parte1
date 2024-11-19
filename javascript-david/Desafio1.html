@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Compras</title>
+</head>
+<body>
+
+    <script>
+        // Solicitando os dados ao usuário
+        let nomeProduto = prompt("Qual o nome do produto?");
+        let quantidade = prompt("Quantas unidades você deseja comprar?");
+        let precoUnitario = prompt("Qual o preço unitário do produto?");
+
+        // Convertendo as entradas para números
+        quantidade = Number(quantidade);
+        precoUnitario = Number(precoUnitario);
+
+        // Verificando se as entradas são válidas
+        if (isNaN(quantidade) || isNaN(precoUnitario) || quantidade <= 0 || precoUnitario <= 0) {
+            alert("Por favor, insira valores válidos para a quantidade e o preço unitário.");
+        } else {
+            // Calculando o total da compra
+            let totalCompra = quantidade * precoUnitario;
+
+            // Formatando o resultado
+            let mensagem = `Você comprou ${quantidade} unidades de ${nomeProduto} por R$ ${precoUnitario.toFixed(2)} cada, totalizando R$ ${totalCompra.toFixed(2)}.`;
+
+            // Exibindo o resultado
+            alert(mensagem);
+            console.log(mensagem);
+        }
+    </script>
+
+</body>
+</html>

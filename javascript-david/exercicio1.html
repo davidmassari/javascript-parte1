@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Pedindo o nome do usuário
+        let nomeUsuario = prompt("Qual é o seu nome?");
+
+        // Verificando se o nome foi fornecido
+        if (nomeUsuario) {
+            
+            // Exibindo uma mensagem personalizada
+            alert(`Olá, ${nomeUsuario}! Seja bem-vindo ao JavaScript!`);
+            console.log("O usuário digitou o nome:", nomeUsuario);
+        } else {
+            alert("Você não digitou um nome!");
+            console.log("O usuário não forneceu um nome.");
+        }
+    </script>
+</body>
+
+</html>

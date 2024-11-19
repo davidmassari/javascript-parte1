@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Guardando dois números
+        let numero1 = prompt("Quantos sorvetes você deseja comprar?");
+        let numero2 = prompt("Qual é o preço desse sorvete?");
+        
+        // Convertendo os valores para números
+        numero1 = Number(numero1);
+        numero2 = Number(numero2);
+
+        // Verificando se os valores inseridos são números válidos
+        if (isNaN(numero1) || isNaN(numero2) || numero1 <= 0 || numero2 <= 0) {
+            alert("Por favor, insira valores válidos para o número de sorvetes e o preço.");
+        } else {
+            // Calculando o total
+            let soma = numero1 * numero2;
+        
+            // Exibindo o resultado
+            alert(`O total da sua compra é: R$${soma.toFixed(2)}`);
+        }
+    </script>
+
+</body>
+</html>

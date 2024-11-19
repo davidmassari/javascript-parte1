@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Guardando dois números
+        let numero1 = prompt("Qual é o ano atual?");
+        let numero2 = prompt("Qual é o ano do seu nascimento?");
+        
+        // Convertendo os valores para números
+        numero1 = Number(numero1);
+        numero2 = Number(numero2);
+
+        // Verificando se os valores inseridos são válidos números
+        if (isNaN(numero1) || isNaN(numero2)) {
+            alert("Por favor, insira anos válidos.");
+        } else {
+            // Calculando a idade
+            let idade = numero1 - numero2;
+            
+            // Exibindo o resultado
+            alert("A sua idade é: " + idade);
+        }
+    </script>
+</body>
+
+</html>

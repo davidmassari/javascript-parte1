@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Anos</title>
+</head>
+<body>
+    
+    <script>
+
+        // Guardando as entradas do usuário
+        let nome = prompt("Informe o seu nome:");
+        let anoAtual = prompt("Informe o ano atual:");
+        let anosAdicionar = prompt("Informe quantos anos deseja adicionar:");
+
+        // Convertendo os valores para números
+        anoAtual = Number(anoAtual);
+        anosAdicionar = Number(anosAdicionar);
+
+        // Calculando o novo ano
+        let novoAno = anoAtual + anosAdicionar;
+
+        // Exibindo o resultado
+        alert(nome + ", o novo ano será: " + novoAno);
+        console.log(nome + " quer adicionar " + anosAdicionar + " anos ao ano " + anoAtual + ", resultando no ano " + novoAno);
+    </script>
+
+
+</body>
+</html>
